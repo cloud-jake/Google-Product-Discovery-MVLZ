@@ -37,22 +37,23 @@ gcloud services enable \
                      
 
 # Enable Services for Data Projects
-gcloud services enable \
-       dataflow.googleapis.com \
-       bigquery.googleapis.com \
-       bigquerystorage.googleapis.com \
-       storage.googleapis.com --project="${PRJPRE}-${PRJP}-retail-data-${randomnumber}"
 
 gcloud services enable \
        dataflow.googleapis.com \
        bigquery.googleapis.com \
        bigquerystorage.googleapis.com \
-       storage.googleapis.com --project="${PRJPRE}-${PRJD}-retail-data-${randomnumber}"
+       storage.googleapis.com --project="${PRJPRE}-${PRJP}-retail-api-${randomnumber}"
 
 gcloud services enable \
        dataflow.googleapis.com \
        bigquery.googleapis.com \
        bigquerystorage.googleapis.com \
-       storage.googleapis.com --project="${PRJPRE}-${PRJT}-retail-data-${randomnumber}"
+       storage.googleapis.com --project="${PRJPRE}-${PRJD}-retail-api-${randomnumber}"
+
+gcloud services enable \
+       dataflow.googleapis.com \
+       bigquery.googleapis.com \
+       bigquerystorage.googleapis.com \
+       storage.googleapis.com --project="${PRJPRE}-${PRJT}-retail-api-${randomnumber}"
 
 

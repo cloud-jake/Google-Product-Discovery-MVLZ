@@ -23,11 +23,13 @@ gcloud beta billing projects link "${PRJPRE}-${PRJP}-retail-api-${randomnumber}"
 gcloud beta billing projects link "${PRJPRE}-${PRJD}-retail-api-${randomnumber}" --billing-account=$BILLING_ID
 gcloud beta billing projects link "${PRJPRE}-${PRJT}-retail-api-${randomnumber}" --billing-account=$BILLING_ID
 
-#Create Data Projects
-gcloud projects create "${PRJPRE}-${PRJP}-retail-data-${randomnumber}" --folder=$FOLDER_ID
-gcloud projects create "${PRJPRE}-${PRJD}-retail-data-${randomnumber}" --folder=$FOLDER_ID
-gcloud projects create "${PRJPRE}-${PRJT}-retail-data-${randomnumber}" --folder=$FOLDER_ID
 
-gcloud beta billing projects link "${PRJPRE}-${PRJP}-retail-data-${randomnumber}" --billing-account=$BILLING_ID
-gcloud beta billing projects link "${PRJPRE}-${PRJD}-retail-data-${randomnumber}" --billing-account=$BILLING_ID
-gcloud beta billing projects link "${PRJPRE}-${PRJT}-retail-data-${randomnumber}" --billing-account=$BILLING_ID
+# Create Data Projects
+##Uncomment this section if separate data processing projects are required
+#gcloud projects create "${PRJPRE}-${PRJP}-retail-data-${randomnumber}" --folder=$FOLDER_ID
+#gcloud projects create "${PRJPRE}-${PRJD}-retail-data-${randomnumber}" --folder=$FOLDER_ID
+#gcloud projects create "${PRJPRE}-${PRJT}-retail-data-${randomnumber}" --folder=$FOLDER_ID
+
+#gcloud beta billing projects link "${PRJPRE}-${PRJP}-retail-data-${randomnumber}" --billing-account=$BILLING_ID
+#gcloud beta billing projects link "${PRJPRE}-${PRJD}-retail-data-${randomnumber}" --billing-account=$BILLING_ID
+#gcloud beta billing projects link "${PRJPRE}-${PRJT}-retail-data-${randomnumber}" --billing-account=$BILLING_ID
