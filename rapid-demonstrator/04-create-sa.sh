@@ -18,9 +18,8 @@ source variables.env
 #    roles/retail.editor
 #    -Retail Search Project
 
-PROJECT_ID="${PROJECT_NAME}-rapid-demo"
 SA="retail-user-event-pipeline"
-SA_FULL="${SA}@${PROJECT_ID}.iam.gserviceaccount.com" 
+A_FULL="${SA}@${PROJECT_ID}.iam.gserviceaccount.com" 
 gcloud iam service-accounts create ${SA} \
        --description="Service account for User Event Pipeline" \
        --display-name="${SA}" --project="${PROJECT_ID}"

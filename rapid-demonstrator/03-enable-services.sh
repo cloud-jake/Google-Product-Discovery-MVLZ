@@ -16,5 +16,5 @@ gcloud services enable \
        logging.googleapis.com \
        monitoring.googleapis.com \
        retail.googleapis.com \
-       cloudresourcemanager.googleapis.com --project="${PROJECT_NAME}-rapid-demo"
+       cloudresourcemanager.googleapis.com --project="${PROJECT_ID}"
 

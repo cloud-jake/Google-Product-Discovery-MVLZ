@@ -6,7 +6,6 @@
 
 source variables.env
 
-PROJECT_ID="${PROJECT_NAME}-rapid-demo" 
 GCS_EVENT="${PROJECT_ID}-event"
 GCS_CATALOG="${PROJECT_ID}-catalog"
 GCS_TEMP="${PROJECT_ID}-temp"
