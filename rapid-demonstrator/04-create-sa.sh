@@ -19,7 +19,7 @@ source variables.env
 #    -Retail Search Project
 
 SA="retail-user-event-pipeline"
-A_FULL="${SA}@${PROJECT_ID}.iam.gserviceaccount.com" 
+SA_FULL="${SA}@${PROJECT_ID}.iam.gserviceaccount.com" 
 gcloud iam service-accounts create ${SA} \
        --description="Service account for User Event Pipeline" \
        --display-name="${SA}" --project="${PROJECT_ID}"
