@@ -15,4 +15,4 @@ source variables.env
 gcloud services enable \
        logging.googleapis.com \
        monitoring.googleapis.com \
-       retail.googleapis.com --project="${PROJECT_ID"
+       retail.googleapis.com --project="${PROJECT_ID}"
