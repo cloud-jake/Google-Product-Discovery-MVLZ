@@ -12,6 +12,7 @@
 FOLDER="nnnnnnnn-Product-Discovery"
 
 # Organization Number
+# gcloud organizations list
 ORGANIZATION_ID=""
 
 
